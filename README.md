@@ -1,4 +1,4 @@
-<img src=".github/thumbnail.jpg" />
+<img src=".github/thumbnail.png" />
 
 <p align="center">
 	<a href="#whats-next-level-week">Next Level Week</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
