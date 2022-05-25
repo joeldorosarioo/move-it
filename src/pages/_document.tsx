@@ -4,8 +4,6 @@ export default function Document () {
 	return (
 		<Html lang="en">
 			<Head>
-				<title>Home - Move.it</title>
-
 				<meta name="description" content="Move.it is a project that combines the pomodoro technique with some challenges for the well-being of those who spend many hours using the computer." />
 
 				<link rel="shortcut icon" href="favicon.png" type="image/png" />
