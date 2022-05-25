@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 
 import { IChallengesProviderProps } from '../interfaces/IChallengesProviderProps';
 import { IChallengesContextData } from '../interfaces/IChallengesContextData';
+import { IChallenge } from '../interfaces/IChallenge';
 
 import LevelUpModal from '../components/LevelUpModal';
 
@@ -15,7 +16,7 @@ export function ChallengesProvider ({ children, ...rest }: IChallengesProviderPr
 	const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
 	const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
 
-	const [activeChallenge, setActiveChallenge] = useState(null);
+	const [activeChallenge, setActiveChallenge] = useState<IChallenge | null>(null);
 	const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
 	const experienceToNextLevel = Math.pow((level + 1) * 4, 2);

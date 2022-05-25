@@ -1,5 +1,5 @@
 export interface IChallenge {
-	type: 'body' | 'eye';
+	type: string;
 	description: string;
 	amount: number;
 }
