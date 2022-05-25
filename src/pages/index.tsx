@@ -6,15 +6,15 @@ import { HomeProps } from '../interfaces/IHomeProps';
 import { CountdownProvider } from '../contexts/CountdownContext';
 import { ChallengesProvider } from '../contexts/ChallengesContexts';
 
-import { CompletedChallenges } from '../components/CompletedChallenges';
-import { Countdown } from '../components/Countdown';
-import { ExperienceBar } from '../components/ExperienceBar';
-import { Profile } from '../components/Profile';
-import { ChallengeBox } from '../components/ChallengeBox';
+import CompletedChallenges from '../components/CompletedChallenges';
+import Countdown from '../components/Countdown';
+import ExperienceBar from '../components/ExperienceBar';
+import Profile from '../components/Profile';
+import ChallengeBox from '../components/ChallengeBox';
 
 import styles from '../stylesheets/pages/Home.module.css';
 
-export default function Home(props: HomeProps) {
+export default function Home (props: HomeProps) {
 	return (
 		<ChallengesProvider
 			level={ props.level }

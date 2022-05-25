@@ -8,7 +8,7 @@ export const CountdownContext = createContext({} as ICountdownContextData);
 
 let countdownTimeout: NodeJS.Timeout;
 
-export function CountdownProvider({ children }: ICountdownProviderProps) {
+export function CountdownProvider ({ children }: ICountdownProviderProps) {
 	const { startNewChallenger } = useContext(ChallengesContext);
 
 	const [time, setTime] = useState(1 * 60); // 25 multiplied by 60 is equal to 1500 minutes.

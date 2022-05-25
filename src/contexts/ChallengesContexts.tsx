@@ -4,13 +4,13 @@ import Cookies from 'js-cookie';
 import { IChallengesProviderProps } from '../interfaces/IChallengesProviderProps';
 import { IChallengesContextData } from '../interfaces/IChallengesContextData';
 
-import { LevelUpModal } from '../components/LevelUpModal';
+import LevelUpModal from '../components/LevelUpModal';
 
 import challenges from '../../challenges.json';
 
 export const ChallengesContext = createContext({} as IChallengesContextData);
 
-export function ChallengesProvider({ children, ...rest }: IChallengesProviderProps) {
+export function ChallengesProvider ({ children, ...rest }: IChallengesProviderProps) {
 	const [level, setLevel] = useState(rest.level ?? 1 );
 	const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
 	const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
@@ -75,6 +75,7 @@ export function ChallengesProvider({ children, ...rest }: IChallengesProviderPro
 				experienceToNextLevel,
 				challengesCompleted,
 				activeChallenge,
+
 				levelUp,
 				startNewChallenger,
 				resetChallenge,

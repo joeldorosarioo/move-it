@@ -3,7 +3,7 @@ import { ChallengesContext } from '../contexts/ChallengesContexts';
 
 import styles from '../stylesheets/components/ExperienceBar.module.css';
 
-export function ExperienceBar () {
+export default function ExperienceBar () {
 	const { currentExperience, experienceToNextLevel } = useContext(ChallengesContext);
 
 	const percentToNextLevel = Math.round(currentExperience * 100) / experienceToNextLevel;

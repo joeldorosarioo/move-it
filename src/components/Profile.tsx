@@ -3,7 +3,7 @@ import { ChallengesContext } from '../contexts/ChallengesContexts';
 
 import styles from '../stylesheets/components/Profile.module.css';
 
-export function Profile() {
+export default function Profile () {
 	const { level } = useContext(ChallengesContext);
 
 	return (

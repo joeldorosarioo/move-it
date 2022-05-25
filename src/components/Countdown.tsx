@@ -4,7 +4,7 @@ import { CountdownContext } from '../contexts/CountdownContext';
 
 import styles from '../stylesheets/components/Countdown.module.css';
 
-export function Countdown () {
+export default function Countdown () {
 	const {
 		minutes,
 		seconds,

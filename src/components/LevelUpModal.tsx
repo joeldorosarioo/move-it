@@ -4,7 +4,7 @@ import { ChallengesContext } from '../contexts/ChallengesContexts';
 
 import styles from '../stylesheets/components/LevelUpModal.module.css';
 
-export function LevelUpModal() {
+export default function LevelUpModal () {
 	const { level, closeLevelUpModal } = useContext(ChallengesContext);
 
 	return (
