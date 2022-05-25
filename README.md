@@ -35,9 +35,9 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/joeldorosarioo/move.it.git
+$ git clone https://github.com/joeldorosarioo/move-it.git
 
-$ cd move.it
+$ cd move-it
 
 # Install dependencies
 $ yarn
@@ -57,6 +57,6 @@ After merging your receipt request to done, you can delete a branch from yours.
 
 ## License
 
-This project is under the MIT license. See the [LICENSE](https://github.com/joeldorosarioo/move.it/blob/main/LICENSE) for details.
+This project is under the MIT license. See the [LICENSE](/LICENSE) for details.
 
 Made with ♥ by Joel Oliveira. [Get in touch!](https://www.linkedin.com/in/joeldorosarioo/)
